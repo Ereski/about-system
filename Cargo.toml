@@ -1,0 +1,30 @@
+[package]
+name          = "about-system"
+description   = "Retrieve system information"
+documentation = "https://docs.rs/about-system/"
+readme        = "README.md"
+keywords      = ["system", "runtime", "platform", "info"]
+categories    = ["config", "hardware-support", "localization", "os"]
+repository    = "https://github.com/Ereski/about-system"
+license       = "BSD-3-Clause"
+version       = "0.1.0"
+authors       = ["Isabela Schulze <isabela@ereski.org>"]
+
+[badges]
+appveyor  = {repository = "Ereski/about-system"}
+travis-ci = {repository = "Ereski/about-system"}
+
+[dependencies]
+cpuid       = "0.1.1"
+quick-error = "1.2.1"
+semver      = "0.9.0"
+
+[target.'cfg(unix)'.dependencies]
+rs-release = "0.1.7"
+sysinfo    = "0.3.17"
+uname      = "0.1.1"
+
+[target.'cfg(windows)'.dependencies]
+kernel32-sys = "0.2.2"
+win32-error  = "0.9.0"
+winapi       = "0.2.8"

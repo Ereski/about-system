@@ -1,0 +1,16 @@
+attributes_on_same_line_as_field = false
+attributes_on_same_line_as_variant = false
+chain_split_single_child = true
+format_strings = true
+imports_indent = "Block"
+max_width = 80
+normalize_comments = true
+reorder_imported_names = true
+reorder_imports = true
+reorder_imports_in_group = true
+reorder_extern_crates = true
+reorder_extern_crates_in_group = true
+report_todo = "Always"
+report_fixme = "Always"
+struct_field_align_threshold = 20
+wrap_comments = true
